@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .navbar-list{
+        display:flex;
+        list-style: none;
+    }
+    .nav-bar{
+        background-color: aquamarine;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-item{
+        text-decoration: none;
+        padding: 20px;
+        color: rgb(213, 8, 8);
+        display: block;
+    }
+    .nav-item:hover{
+        color: blue;
+        font-size: 18px;
+    }
+    .logo{
+        width:60px;
+        height: 60px;
+    }
+    .btn{
+        padding: 6px 12px;
+        margin-right: 10px;
+        background-color: rgb(186, 186, 23);
+        border: none;
+        border-radius: 6px;
+    }
+    .btn:hover{
+        color: blueviolet;
+        cursor: pointer;
+    }
+    .header {
+      background-color: #ffcc00;
+      text-align: center;
+      padding: 10px 0;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .sale-bar {
+      text-align: center;
+      padding: 5px;
+      font-size: 14px; 
+    } 
+
+    .products {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 40px 20px;
+    }
+
+    .product {
+      text-align: center;
+      width: 200px;
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      border: 1px solid rgb(46, 43, 43) ;
+      padding: 10px;
+      background-color: #f9f9f9;
+    }
+
+    .sold-out {
+      color: red;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .product-name {
+      margin-top: 8px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .footer{
+            display: flex;
+            justify-content: space-between;
+            background-color: aquamarine;
+            padding: 35px;
+            align-items: start;
+        }
+        .footer-logo{
+            display: flex;
+            align-items: center;
+        }
+        .footer-logo img{
+            width: 35px;
+            height: 35px;
+        }
+        .footer-logo h3{
+            font-size: 18px;
+            margin-left: 4px;
+        }
+        .footer-colunms{
+            display: flex;
+            gap: 60px;
+        }
+        .footer-colunm h4{
+           font-size: 14px;
+            text-transform: uppercase ;
+            margin-bottom: 12px;
+        }
+        .footer-colunm a{
+            display: block;
+            text-decoration: none;
+            color: black;
+        }
+        .footer-colunm a:hover{
+             color: white;
+             cursor: pointer;
+        }
+        .contact-item img{
+            width: 12px;
+            height: 12px;
+        }
+        .contact-item{
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+  </style>
+</head>
+<body>
+     <div class="nav-bar">
+        <div>
+            <img class="logo" src="https://img.icons8.com/?size=96&id=uLWV5A9vXIPu&format=png" alt="">
+        </div>
+        <ul class="navbar-list">
+            <li><a href="" class="nav-item">Home</a></li>
+            <li><a href="" class="nav-item">Product</a></li>
+            <li><a href="" class="nav-item">Content</a></li>
+            <li><a href="" class="nav-item">About</a></li>
+        </ul>
+        <button class="btn">Login</button>
+    </div>
+    <div class="sale-bar">
+       <marquee behavior="" direction="">
+      <p>ការលក់បញ្ចុះតម្លៃពិសេស Clearances Sale <span style="color: blue;">50% off</span>  លើនាឡិកាទាំងអស់!</p> 
+    </marquee>
+  </div>
+
+  <div class="header">
+    ហាងលក់ នាឡិកាទំនើប
+  </div>
+
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img style="height: 600px;" src="./image/watch1.webp" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img style="height: 600px;" src="./image/image.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img style="height: 600px;" src="./image/imagenew.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+  <div class="products">
+    <div class="product">
+      <img src="./image/watch2.png" alt="Classic Watch">
+      <div class="product-name">Glashütte Original SeaQ</div>
+      <div class="sold-out">Price: $9,000 USD</div>
+    </div>
+
+    <!-- Watch 2 -->
+    <div class="product">
+      <img src="image/watch3.png" alt="Modern Watch">
+      <div class="product-name">Blancpain Fifty Fathoms</div>
+      <div class="sold-out">Price: $15,700</div>
+    </div>
+
+    <!-- Watch 3 -->
+    <div class="product">
+      <img src="image/watch4.png" alt="Smart Watch">
+      <div class="product-name">Audemars Piguet Royal Oak Ref. 16202</div>
+      <div class="sold-out">Price: $33,200 USD</div>
+    </div>
+
+    <!-- Watch 4 -->
+    <div class="product">
+      <img src="image/watch5.webp" alt="Digital Watch">
+      <div class="product-name">Parmigiani Fleurier Tonda PF</div>
+      <div class="sold-out">Price: $22,900 USD</div>
+    </div>
+
+    <!-- Watch 5 -->
+    <div class="product">
+      <img src="image/watch6.webp" alt="Gold Watch">
+      <div class="product-name">Cartier Rotonde de Cartier Earth and Moon</div>
+      <div class="sold-out">Price: $231,000 USD</div>
+    </div>
+
+    <!-- Watch 6 -->
+    <div class="product">
+      <img src="image/watch7.webp" alt="Chronograph Watch">
+      <div class="product-name">Rolex Day-Date 40 Meteorite Ref. 228239</div>
+      <div class="sold-out">Price: $49,550 USD</div>
+    </div>
+</div>
+<footer class="footer">
+        <div class="footer-logo">
+            <img src="https://img.icons8.com/?size=100&id=fzNsfXrOd1Xn&format=png&color=000000" alt="">
+            <h3>Online Shop</h3>
+        </div>
+        <div class="footer-colunms">
+            <div class="footer-colunm">
+                <h4>Product</h4>
+                <a href="">Shirt</a>
+                <a href="">Shoes</a>
+                <a href="">Dress</a>
+            </div>
+            <div class="footer-colunm">
+                <h4>Legal</h4>
+                <a href="">Privacy</a>
+                <a href="">Tern&Condition</a>
+                <a href="">Shopping</a>
+            </div>
+            <div class="footer-colunm">
+                <h4>Contect</h4>
+                <div class="contact-item">
+                    <img src="https://img.icons8.com/?size=96&id=13800&format=png" alt="">
+                <p>Phnom Penh</p>
+                </div>
+                <div class="contact-item">
+                    <img src="https://img.icons8.com/?size=100&id=38159&format=png" alt="">
+                <a href="mailto:moskimleng720@gmail.com">moskimleng720@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <img src="https://img.icons8.com/?size=100&id=9659&format=png&color=000000" alt="">
+                <a href="tel:+885974458170">+855 974 458 170</a>
+                </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
